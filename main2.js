@@ -41,8 +41,8 @@ document.body.onmousemove = function (e) {
     var top = parseInt(div1.style.top) || 0
     div1.style.left = left + deltaX + 'px'
     div1.style.top = top + deltaY + 'px'
-    lastX = touch.clientX
-    lastY = touch.clientY
+    lastX = e.clientX
+    lastY = e.clientY
   }
 }
 
